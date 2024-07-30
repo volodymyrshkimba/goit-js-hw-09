@@ -84,5 +84,6 @@ const markup = images.map(({preview, original, description}) =>
 galleryEL.innerHTML = markup;
 
 
-new SimpleLightbox('.gallery a', { overlayOpacity: 1 });
+new SimpleLightbox('.gallery a', {captionsData: "alt", captionDelay: 250});
+
 
