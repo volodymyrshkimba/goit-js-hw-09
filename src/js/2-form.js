@@ -12,7 +12,7 @@ formEl.elements.email.value = formData.email;
 formEl.elements.message.value = formData.message;
 }
 
-const onFormElInput = event => {
+const onFormElInput = () => {
 	formData.email = formEl.elements.email.value.trim();
 	formData.message = formEl.elements.message.value.trim();
    localStorage.setItem(key, JSON.stringify(formData));
